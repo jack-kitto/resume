@@ -15,10 +15,11 @@ jobs:
         with:
           name: PDF
           path: cv.pdf
-      uses: xresloader/upload-to-github-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        file: "*.pdf"
-        tags: true
-        draft: true
+      - name: Release PDF file
+        uses: xresloader/upload-to-github-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file: "*.pdf"
+          tags: true
+          draft: true
