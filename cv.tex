@@ -1,0 +1,146 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{array}
+    \usepackage{textcomp}
+    \usepackage{varwidth}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+    \usepackage[hidelinks]{hyperref}
+    \hypersetup{
+      colorlinks=false
+    }
+    \urlstyle{same}
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    %==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+  {\Huge \scshape {Jack Kitto}}\\
+  Canberra, ACT $\cdot$ \href{mailto:jack@kitto.sh}{jack@kitto.sh} $\cdot$ \href{tel:+61 490 657 422}{+61 490 657 422} $\cdot$ \url{jack.kitto.sh}\\
+\end{center}
+
+%==== Education ====%
+      \header{Education}
+
+      \textbf{University Of Canberra}\hfill Canberra, ACT\\
+BS Software Engineering \textit{GPA: 6.0/7.0} \hfill 02/2021 - Present\\
+
+\vspace{2mm}
+      \textbf{University of Sydney Cyber Security Bootcamp}\hfill Online\\
+          02/2021 - 08/2021\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+  \item Attended an intensive 6 month Cybersecurity Bootcamp, acquiring practical skills in network security, ethical hacking, and incident response to effectively protect digital assets and mitigate cyber threats.
+\end{itemize}
+          \vspace{2mm}
+      \textbf{CompTIA Security+}\hfill Online\\
+          
+          \vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+  \item Attained CompTIA Security+ certification, demonstrating proficiency in cybersecurity principles, network security, and risk management practices.
+\end{itemize}
+          \vspace{2mm}
+
+%==== Experience ====%
+      \header{Work Experience}
+      \vspace{1mm}
+
+      \textbf{University Of Canberra} \hfill Canberra, ACT\\
+          \textit{Research Technician} \hfill 01/06/2022 - 31/07/2024\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+      \item Designed and implemented a real-time IoT dashboard for monitoring environmental data, enabling researchers at the University of Canberra to analyse and visualise data trends effectively.
+\end{itemize}
+      \textbf{Delv} \hfill Canberra, ACT\\
+          \textit{DevOps Engineer} \hfill 05/8/2022 - 02/10/2023\\
+          \vspace{-1mm}
+      \begin{itemize} \itemsep 1pt
+            \item Developed and implemented custom ServiceNow workflows and automation solutions at Delv, optimising IT service management and logistics processes, enhancing overall operational efficiency.
+            \item {\
+}Enhanced and managed CI/CD pipelines within Azure DevOps for iOS and Android applications utilising React Native and Firebase at Delv, guaranteeing smooth integration and deployment workflows to Google Play and Testflight.
+      \end{itemize}
+      \textbf{Nod} \hfill Canberra, ACT\\
+          \textit{DevOps Engineer} \hfill 02/10/2023 - Preset\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+      \item Developed and deployed interactive and visually appealing web application user interfaces based on Figma designs, ensuring seamless user experiences for Nod's platform.
+      \item Developed and optimised RESTful APIs in Node.js and Express, deployed on Firebase cloud functions, to drive seamless communication between mobile and web applications, elevating user experience and scalability for Nod's platform.
+      \item Developed The Nod App, a revolutionary platform for cashless tipping and expressing gratitude, designed to foster positivity and appreciation in everyday interactions.
+      \item Automated CI/CD pipelines utilizing GitHub Actions for seamless builds and semantic releases to Firebase Hosting, Google Play, and TestFlight, optimising deployment processes for web and mobile applications at Nod.
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{V{5cm} @{\hskip 0.6cm} V{12cm}}
+Programming Language: & JavaScript, TypeScript, C++, Objective-C, YAML, Bash, HTML, CSS \\
+Frameworks: & Next.JS, React Native, Express.js, Tailwind CSS, Node, Jest \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+      {\textbf{Kanban Task Management App}} {\sl Next.JS, TypeScript, Tailwind CSS, Prisma, Vercel, Postgresql, Clerk} \\
+Crafted the Kanban Task Management App as a solution for a frontendmentors.com challenge, leveraging their provided Figma design assets to develop a user-friendly application that enhances task organisation and productivity.\\
+\vspace*{2mm}
+
+    \end{document}
