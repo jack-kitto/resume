@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/jack-kitto/resume/compare/v1.1.1...v1.1.2) (2024-05-13)
+
+
+### Bug Fixes
+
+* remove guard ([ca9ee97](https://github.com/jack-kitto/resume/commit/ca9ee975cc00b0e25771149c462fd220c41c78c1))
+
 ## [1.1.1](https://github.com/jack-kitto/resume/compare/v1.1.0...v1.1.1) (2024-05-13)
 
 
