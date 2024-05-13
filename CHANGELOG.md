@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jack-kitto/resume/compare/v1.0.0...v1.1.0) (2024-05-13)
+
+
+### Features
+
+* bump ([d4542d9](https://github.com/jack-kitto/resume/commit/d4542d9904fd5f6f337387102f79440bedfe4ad3))
+
 # 1.0.0 (2024-05-13)
 
 
