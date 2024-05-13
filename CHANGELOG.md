@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/jack-kitto/resume/compare/v1.1.0...v1.1.1) (2024-05-13)
+
+
+### Bug Fixes
+
+* remove create release step ([fb6a274](https://github.com/jack-kitto/resume/commit/fb6a2748f4148c0ac76f4da0c8ff64454d177627))
+* resolve indentation issue ([c41f3a1](https://github.com/jack-kitto/resume/commit/c41f3a1bef1534782ae0253c28dbbbef71becbaa))
+
 # [1.1.0](https://github.com/jack-kitto/resume/compare/v1.0.0...v1.1.0) (2024-05-13)
 
 
