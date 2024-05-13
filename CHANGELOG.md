@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/jack-kitto/resume/compare/v1.1.2...v1.2.0) (2024-05-13)
+
+
+### Features
+
+* add release step ([b8a225d](https://github.com/jack-kitto/resume/commit/b8a225d976a6aaf2e5f8f35ce972c9ffd78d359c))
+
 ## [1.1.2](https://github.com/jack-kitto/resume/compare/v1.1.1...v1.1.2) (2024-05-13)
 
 
