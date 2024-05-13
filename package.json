@@ -49,5 +49,8 @@
         ]
       }
     ]
+  },
+  "dependencies": {
+    "semantic-release-conventional-commits": "^3.0.0"
   }
 }
