@@ -2,8 +2,7 @@ name: Build LaTeX document
 on:
   push:
     branches: 
-      - master
-      - develop
+      - main
     tags:
        - '*'
 jobs:
