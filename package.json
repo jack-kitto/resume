@@ -1,8 +1,6 @@
 {
   "name": "resume",
-  "release": {
-    "branches": ["main"]
-  },
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,5 +11,43 @@
   "license": "ISC",
   "devDependencies": {
     "semantic-release": "^23.1.1"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits"
+      }
+    ],
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
+  "release": {
+    "analyzeCommits": "semantic-release-conventional-commits",
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      {
+        "name": "main",
+        "prerelease": false
+      }
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md"
+        ]
+      }
+    ]
   }
 }
