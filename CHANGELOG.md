@@ -1,0 +1,11 @@
+# 1.0.0 (2024-05-13)
+
+
+### Bug Fixes
+
+* remove guard conditions skipping release and publish steps ([03c17b2](https://github.com/jack-kitto/resume/commit/03c17b2d3150dcd45af2c3f079fb7f1f43b46b45))
+
+
+### Features
+
+* rename cv file ([99284e9](https://github.com/jack-kitto/resume/commit/99284e9bfac04b7b09db6ee252f80cd4a45de2f2))
