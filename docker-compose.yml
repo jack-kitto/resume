@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      dockerfile: ./Dockerfile
+    container_name: latex
+    restart: always
+    command: latex pdflatex cv.tex
